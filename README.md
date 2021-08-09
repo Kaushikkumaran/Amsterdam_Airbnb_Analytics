@@ -128,7 +128,7 @@ their actual price < x
 (potentially underpriced listings)
 $11,865 
 (underpriced listings in test data - revenue)
-# Potentially underpriced listings
+Number of Potentially underpriced listings
 654 
 (unique low priced listings in test data)
 Profit per underpriced listing per day
