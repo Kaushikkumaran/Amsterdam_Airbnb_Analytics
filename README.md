@@ -46,7 +46,7 @@ Important Predictors:
 - Number of reviews
 - availability_365
 - Minimum nights
-![image](https://user-images.githubusercontent.com/20616274/128671453-d6b251e1-4ed2-4603-8bee-44f445a9d30b.png)
+![image](https://user-images.githubusercontent.com/20616274/128671691-117abfa1-12fa-43bc-8a9a-c8d4c92eb1cf.png)
 
 
 Key Model Features:
