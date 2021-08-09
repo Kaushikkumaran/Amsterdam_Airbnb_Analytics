@@ -17,7 +17,7 @@ For entire apartments, minimum nights at a listing seem to have a positive assoc
 ![image](https://user-images.githubusercontent.com/20616274/128670800-fd2dba10-64f6-4b3f-a345-bfcf13c36528.png)
 
 Prices are affected by neighborhood, across homes and rooms
-![image](https://user-images.githubusercontent.com/20616274/128670971-f38a8361-d60d-4eb9-89d4-5d73100e0cef.png)
+![image](https://user-images.githubusercontent.com/20616274/128671790-9c8d90d6-c039-46fe-9c61-b936ff632d31.png)
 
 Explaining neighborhood price differentiation with safety
 ![image](https://user-images.githubusercontent.com/20616274/128670902-c854c92c-f667-4633-bab5-d7d2af2a0def.png)
@@ -46,6 +46,7 @@ Important Predictors:
 - Number of reviews
 - availability_365
 - Minimum nights
+
 ![image](https://user-images.githubusercontent.com/20616274/128671691-117abfa1-12fa-43bc-8a9a-c8d4c92eb1cf.png)
 
 
