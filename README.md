@@ -65,6 +65,83 @@ Remarks:
 - The prediction is better for private room type than entire apartment/house
 - The model is under estimating at higher prices and over estimating at lower prices
 
+### Linear Regression
+Linear Regression yields a RMSE score of 51.5
+
+Important Predictors:
+- Room Type
+- Neighbourhood
+- Number of reviews
+- Minimum nights
+
+Key Model Features:
+- Train RMSE -  51.51
+- Test RMSE - 51.53
+- Cross Validation RMSE - 51.53
+
+Remarks:
+- Higher the minimum nights, lesser the price
+- The prices are very low for shared rooms
+- Neighbourhood centrum west has higher prices
+
+### Ridge Regression
+Ridge Regression yields a RMSE score of 53 for Entire Apt and 42 for Private Room 
+
+Important Predictors:
+Split the model based on room type
+- Neighbourhood
+- Number of reviews
+- Minimum nights
+
+Key Model Features:
+Entire Home/Apt:
+Train RMSE -  53.68
+Test RMSE - 54.02
+Cross Validation RMSE - 53.07 (alpha = 0.89)
+
+![image](https://user-images.githubusercontent.com/20616274/128672187-a369c0ea-9500-4411-b765-fb5187272a6a.png)
 
 
+Private Room:
+Train RMSE -  39.96
+Test RMSE - 42.55
+Cross Validation RMSE - 38.64 (alpha = 0.95)
+
+![image](https://user-images.githubusercontent.com/20616274/128672203-c20a43c8-fcee-4034-a1e9-3dbabee17648.png)
+
+
+Remarks:
+- Provide a grid for alpha values
+- Choose the model with least cross validation rmse
+- Repeat the same for entire home/apt and private room
+
+
+## Business Impact
+
+Metric
+Calculation
+Predicted price of the listing
+x = y_pred  - RMSE 
+(removing RMSE for conservative approach)
+$x aggregated for listings with 
+their actual price < x
+(potentially underpriced listings)
+$11,865 
+(underpriced listings in test data - revenue)
+# Potentially underpriced listings
+654 
+(unique low priced listings in test data)
+Profit per underpriced listing per day
+$18.14
+Average occupancy days per underpriced listing per month
+18 
+(from average reviews per month and minimum nights)
+Average occupancy days per underpriced listing per year
+216
+Profit per year per underpriced  listing
+$3919 (occupancy days per year * profit per listing)
+Assuming 50 % is the true profit
+$1959 (Removing some additional costs)
+
+### The model drives ~$2000 per year per listing if prices are optimized
 
