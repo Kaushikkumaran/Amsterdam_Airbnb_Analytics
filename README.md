@@ -123,23 +123,30 @@ Calculation
 Predicted price of the listing
 x = y_pred  - RMSE 
 (removing RMSE for conservative approach)
+
 $x aggregated for listings with 
 their actual price < x
 (potentially underpriced listings)
 $11,865 
 (underpriced listings in test data - revenue)
+
 Number of Potentially underpriced listings
 654 
 (unique low priced listings in test data)
+
 Profit per underpriced listing per day
 $18.14
+
 Average occupancy days per underpriced listing per month
 18 
 (from average reviews per month and minimum nights)
+
 Average occupancy days per underpriced listing per year
 216
+
 Profit per year per underpriced  listing
 $3919 (occupancy days per year * profit per listing)
+
 Assuming 50 % is the true profit
 $1959 (Removing some additional costs)
 
